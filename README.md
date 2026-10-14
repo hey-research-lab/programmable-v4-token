@@ -25,7 +25,7 @@ The main LP NFT, `1708785`, is held by the [PositionFeesForwarder locker](https:
 
 ## Revenue and burns
 
-Programmable's allocation policy assigns half of net platform revenue to daily V4 buybacks and burns and half to the treasury. Collected V4 from the project's LP fees is also assigned to daily burns. Creator and module author rewards are separate liabilities and are excluded from the platform allocation.
+Programmable allocates 80% of collected fee revenue to manual V4 buybacks and burns. The remaining 20% goes to its treasury and operating costs. Eligible revenue includes collected platform fees and quote-asset fees from the project's own liquidity position. V4 collected directly as LP fees is also burned, separately from purchased V4. Creator and module author rewards are excluded. There is no automatic purchase on each trade or fixed daily schedule.
 
 V4 burns are transfers to `0x000000000000000000000000000000000000dEaD`. They remove tokens from circulation without reducing the ERC-20 `totalSupply`, because this token does not expose a supply-reducing burn function. [Tokenomics](https://programmable.market/docs/v4-token) explains the policy and [Dune](https://dune.com/programmablehq/analytics) records observed burns and fees. The policy is separate from an individual executed claim, purchase or burn transaction.
 
